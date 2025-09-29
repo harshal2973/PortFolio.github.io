@@ -3,8 +3,8 @@
 :root {
   /* Brand Primary */
   --primary: #CB7246;
+  --primary-25: #CB724633;
   --primary-light: #E29B7A;
-  --primary-light-50: #E29B7A80;
   --primary-dark: #9E4E29;
 
   /* Neutral / Background */
@@ -465,13 +465,13 @@ ul {
   font-size: 4rem;
 }
 
-.hero-img{
+.hero-img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hero-img img{
+.hero-img img {
   height: 12rem;
   width: 12rem;
 }
@@ -580,41 +580,110 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .about-content {
+.about-content {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.about .about-content p {
+.about-content p {
   font-size: 1.125rem;
   color: var(--text-primary);
 }
 
-.about .about-img {
+.about-img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.about .about-img img {
+.about-img img {
   height: 20rem;
   width: 20rem;
 }
 
 @media (max-width: 768px) {
-  .about .container .row {
+  .about-reverse {
     flex-direction: column-reverse;
   }
 
-  .about .about-img {
+  .about-img {
     margin-bottom: 3rem;
   }
 }
 
 @media (max-width: 425px) {
-  .about .about-content p {
+  .about-content p {
     font-size: 1rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Certificates
+--------------------------------------------------------------*/
+
+.certificate-card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.certificate-card {
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  box-shadow: 0 0 0.375rem var(--shadow-medium);
+  width: calc((100%/3) - 2rem);
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.certificate-icon{
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  background-color: var(--primary-25);
+}
+
+.certificate-icon i{
+  font-size: 1.25rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  color: var(--primary);
+}
+
+.certificate-text{
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: calc(100% - 4.5rem);
+}
+
+.certificate-text h3{
+  color: var(--primary-dark);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.certificate-text p{
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.certificate-text span{
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .certificate-card {
+    width: 100%;
   }
 }
 
@@ -654,7 +723,7 @@ section {
 
 .skills-card-list-item {
   border-radius: 2rem;
-  background-color:  var(--border);
+  background-color: var(--border);
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 500;
@@ -677,11 +746,11 @@ section {
     font-size: 1.25rem;
   }
 
-  .skills-card-title{
+  .skills-card-title {
     text-align: center;
   }
 
-  .skills-card-list{
+  .skills-card-list {
     justify-content: center;
   }
 }
@@ -847,8 +916,8 @@ section {
 footer {
   text-align: center;
   color: #fff;
-  padding: 25px 0;
-  background: #000;
+  padding: 0.75rem 0;
+  background: var(--primary);
 }
 
 footer .copyright {
