@@ -37,6 +37,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#skills">Skills</a></li>
+          <li><a class="nav-link scrollto" href="#projects">Projects</a></li>
           <li><a class="nav-link scrollto " href="#resume">Resume</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -63,7 +64,7 @@
               <p class="hero-subtitle mb-4"><span class="typed"
                   data-typed-items="Frontend Developer, UI/UX Designer, Web Enthusiast, Problem Solver, Creative Coder"></span>
               </p>
-              <p class="pt-3"><button class="btn btn-primary btn-lg js-scroll px-4">View My Work</button></p>
+              <p class="pt-3"><button class="btn btn-primary btn-lg js-scroll px-4" onclick="scrollToId('#projects')">View My Work</button></p>
             </div>
           </div>
         </div>
@@ -97,27 +98,27 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="certificate-card-group">
-              <div class="certificate-card">
+              <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="certificate-icon">
                   <i class="fa-solid fa-award"></i>
                 </div>
                 <div class="certificate-text">
-                  <h3>CCC Certified</h3>
+                  <h3>CCC(Course on Computer Concept) Certified</h3>
                   <p>Gujarat Computer Training Institute(GCTI)</p>
                   <span>April 2022</span>
                 </div>
               </div>
-              <div class="certificate-card">
+              <div class="certificate-card" data-aos="fade-up" data-aos-delay="400">
                 <div class="certificate-icon">
                   <i class="fa-solid fa-award"></i>
                 </div>
                 <div class="certificate-text">
-                  <h3>C & C++ Certified</h3>
+                  <h3>C & C++ Programming Certified</h3>
                   <p>Gujarat Computer Training Institute(GCTI)</p>
                   <span>July 2022</span>
                 </div>
               </div>
-              <div class="certificate-card">
+              <div class="certificate-card" data-aos="fade-up" data-aos-delay="600">
                 <div class="certificate-icon">
                   <i class="fa-solid fa-award"></i>
                 </div>
@@ -143,7 +144,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="skills-card-group">
-              <div class="skills-card">
+              <div class="skills-card" data-aos="fade-up" data-aos-delay="0">
                 <h3 class="skills-card-title">Front-End Development</h3>
                 <ul class="skills-card-list">
                   <li class="skills-card-list-item">HTML5</li>
@@ -157,7 +158,7 @@
                 </ul>
               </div>
 
-              <div class="skills-card">
+              <div class="skills-card" data-aos="fade-up" data-aos-delay="200">
                 <h3 class="skills-card-title">Frameworks & Web Technologies</h3>
                 <ul class="skills-card-list">
                   <li class="skills-card-list-item">Angular</li>
@@ -166,7 +167,7 @@
                 </ul>
               </div>
 
-              <div class="skills-card">
+              <div class="skills-card" data-aos="fade-up" data-aos-delay="400">
                 <h3 class="skills-card-title">Tools & Productivity</h3>
                 <ul class="skills-card-list">
                   <li class="skills-card-list-item">Visual Studio</li>
@@ -180,7 +181,7 @@
                 </ul>
               </div>
 
-              <div class="skills-card">
+              <div class="skills-card" data-aos="fade-up" data-aos-delay="600">
                 <h3 class="skills-card-title">Design & Prototyping</h3>
                 <ul class="skills-card-list">
                   <li class="skills-card-list-item">Figma</li>
@@ -196,6 +197,60 @@
       </div>
     </section>
     <!-- End Skills Section -->
+    <!-- ======= Projects Section ======= -->
+    <section id="projects" class="projects section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Projects</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class=" project-card" data-aos="fade-up" data-aos-delay="0">
+              <div class="project-img">
+                <img src="assets/img/proj1.png" class="img-fluid" alt="Project1">
+              </div>
+              <div class="project-text">
+                <h3>Wrap 6 – New Module Development & Enhancements</h3>
+                <span>Injala India Pvt Ltd, Ahmedabad, Gujarat.</span>
+                <p>Built a full-featured module from scratch using Angular, TypeScript, and SCSS. Translated Figma
+                  designs
+                  into a responsive, accessible, and high-performance interface. Delivered a scalable solution optimized
+                  for SEO and user experience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class=" project-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-img">
+                <img src="assets/img/proj2.png" class="img-fluid" alt="Project2">
+              </div>
+              <div class="project-text">
+                <h3>Custom Report Module Enhancements</h3>
+                <span>Injala India Pvt Ltd, Ahmedabad, Gujarat.</span>
+                <p>Enhanced a mission-critical reporting tool by developing new features, optimizing API integrations,
+                  and refining UI interactions. Improved system performance and usability for thousands of daily users.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class=" project-card" data-aos="fade-up" data-aos-delay="400">
+              <div class="project-img">
+                <img src="assets/img/proj3.png" class="img-fluid" alt="Project3">
+              </div>
+              <div class="project-text">
+                <h3>Wrap 5 – Legacy System Maintenances</h3>
+                <span>Injala India Pvt Ltd, Ahmedabad, Gujarat.</span>
+                <p>Modernized a legacy platform with updated layouts and improved responsiveness. Applied UX best
+                  practices and accessibility standards to extend the system’s lifecycle while ensuring SEO compliance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume section-bg">
       <div class="container">
@@ -314,7 +369,8 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <p class="copyright">&copy; <span id="footer-year"></span> <strong>harshal.io</strong>. All Rights Reserved</p>
+            <p class="copyright">&copy; <span id="footer-year"></span> <strong>harshal.io</strong>. All Rights Reserved
+            </p>
           </div>
         </div>
       </div>

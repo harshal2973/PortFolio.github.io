@@ -262,4 +262,21 @@
     footerYear.textContent = new Date().getFullYear();
   }
 
+  window.scrollToId = (id) => {
+    const el = select(id);
+    if (el) {
+      const header = select('#header');
+      let offset = header ? header.offsetHeight : 0;
+
+      if (header && !header.classList.contains('header-scrolled')) {
+        offset -= 16;
+      }
+
+      const elementPos = el.offsetTop;
+      window.scrollTo({
+        top: elementPos - offset,
+        behavior: 'smooth'
+      });
+    }
+  }
 })()
